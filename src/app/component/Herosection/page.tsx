@@ -347,7 +347,7 @@ const HeroSection = () => {
             </div>
 
             {/* Progress Bar Section */}
-            <div className="py-10 flex items-start justify-center">
+            <div className="py-10 flex flex-col md:flex-row items-start justify-center">
                 <div>
                     <h2 className="py-5 text-center text-2xl font-bold mb-4 text-red-900">
                         Service Performance (2024)
@@ -361,14 +361,13 @@ const HeroSection = () => {
                 </div>
 
                 {/* Progress Bars */}
-                <div className="w-full max-w-4xl mx-auto px-4 md:px-16">
+                <div className="w-full max-w-4xl mx-auto px-4 md:px-16 py-5">
                     <ProgressBar label="Recruitment" value={75} />
                     <ProgressBar label="Training" value={85} />
                     <ProgressBar label="Education" value={90} />
                     <ProgressBar label="Investment" value={60} />
                     <ProgressBar label="E-Commerce" value={70} />
                 </div>
-                <div>Added</div>
             </div>
         </div>
     );

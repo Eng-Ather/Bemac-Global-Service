@@ -7,11 +7,11 @@ import copyright from "@/app/lib/copyright.png";
 const Footer = () => {
     return (
         <div className="bg-[#3E2723] pt-20 pb-8 px-16"> {/* Dark brown background */}
-            <div className="text-white flex justify-between items-start">
+            <div className="text-white flex flex-wrap justify-between items-start space-y-8 md:space-y-0">
                 {/* Footer details and pages link box */}
-                <div className="flex justify-between w-full">
+                <div className="flex flex-col md:flex-row justify-between w-full md:w-auto">
                     {/* Logo and Description */}
-                    <div className="flex flex-col space-y-4 max-w-[300px]">
+                    <div className="flex flex-col space-y-4 max-w-[300px] md:max-w-[350px]">
                         <Image
                             className="filter brightness-0 invert mx-auto"
                             src="https://nextjs.org/icons/next.svg"
@@ -73,6 +73,14 @@ const Footer = () => {
                             Media Kit
                         </Link>
                     </div>
+                </div>
+            </div>
+
+            {/* Copyright Section */}
+            <div className="mt-8 border-t border-gray-600 pt-6 text-center">
+                <div className="flex justify-center items-center space-x-2">
+                    <Image src={copyright} alt="Copyright" width={20} height={20} />
+                    <p className="text-gray-300 text-sm">© 2025 Bemac Global Services. All rights reserved.</p>
                 </div>
             </div>
         </div>
