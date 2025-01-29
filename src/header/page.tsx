@@ -5,7 +5,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     // <header className="w-full bg-[#3E2723] py-4 px-2">
-    <header className="w-full bg-[#3E2723] py-4 px-6">
+    <header className="w-full bg-[#3E2723] py-4 px-4">
 
 <div className="w-1/2  flex justify-between items-center mx-auto">
         {/* Logo and Brand Name */}
