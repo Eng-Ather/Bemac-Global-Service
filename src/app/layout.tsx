@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 // import NaveBar from "./component/header/page"
 import Header from "@/header/page";
+import Footer from "./component/fotter/page";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,11 +31,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="py-2 px-5 md:px-28 bg-[#3E2723]">
+        <div className="py-2 px-2 md:px-28 bg-[#3E2723]">
         <Header/>
 
         </div>
         {children}
+        <Footer/>
       </body>
     </html>
   );

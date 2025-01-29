@@ -3,7 +3,7 @@ const nextConfig = {
 
 
     images: {
-        domains: ['economics.illinois.edu'],
+        domains: ['economics.illinois.edu','via.placeholder.com'],
       },
 };
 

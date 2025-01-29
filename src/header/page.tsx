@@ -4,12 +4,12 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="bg-gray-900 border-b-2 shadow-lg py-4 px-10">
+    <header className="border-b-2 shadow-lg py-4 px-10">
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo and Brand Name */}
         <div className="flex items-center space-x-3">
           <Image
-            className="dark:invert filter brightness-0 invert"
+            className="dark:invert filter brightness-0 invert hidden md:block"
             src="https://nextjs.org/icons/next.svg"
             alt="Next.js Logo"
             width={40}
@@ -42,20 +42,13 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href="/services"
+                href="/Services"
                 className="text-white hover:text-orange-500 font-semibold transition duration-300"
               >
                 Services
               </Link>
             </li>
-            <li>
-              <Link
-                href="/contact"
-                className="text-white hover:text-orange-500 font-semibold transition duration-300"
-              >
-                Contact Us
-              </Link>
-            </li>
+           
           </ul>
         </nav>
 
