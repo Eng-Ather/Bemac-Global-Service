@@ -291,7 +291,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ label, value }) => {
             <label className="block text-lg font-medium text-red-900 mb-2">{label}</label>
             <div className="w-full bg-gray-300 rounded-full h-2.5">
                 <div
-                    className="bg-blue-600 h-2.5 rounded-full"
+                    className="bg-red-900 h-2.5 rounded-full"
                     style={{ width: `${value}%` }}
                 ></div>
             </div>
