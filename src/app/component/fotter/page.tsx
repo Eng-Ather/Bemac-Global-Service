@@ -150,7 +150,7 @@ function Footer() {
               {/* Social Media Links */}
               <div className="flex justify-around md:justify-start mt-3 space-x-6">
                 <a
-                  href="https://www.facebook.com/saylani.smit/"
+                  href="https://www.facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-6 h-6 flex justify-center items-center rounded-full bg-white text-blue-500 hover:text-blue-500 hover:scale-150 duration-300"
@@ -158,7 +158,7 @@ function Footer() {
                   <FaFacebook size={18} />
                 </a>
                 <a
-                  href="https://www.youtube.com/playlist?list=PL47LaC9-GaXXwcuZ0Ho_AxbjEjO087AD_"
+                  href="https://www.youtube.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-6 h-6 flex justify-center items-center rounded-full bg-white text-red-500 hover:text-red-500 hover:scale-150 duration-300"
@@ -166,7 +166,7 @@ function Footer() {
                   <FaYoutube size={18} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/saylanimasstraining/"
+                  href="https://www.linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-6 h-6 flex justify-center items-center rounded-full bg-white text-blue-500 hover:text-blue-500 hover:scale-150 duration-300"
