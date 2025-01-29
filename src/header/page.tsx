@@ -18,7 +18,7 @@ const Header = () => {
             height={40}
             priority
           />
-          <Link href="/" className="font-serif text-2xl text-white font-bold">
+          <Link href="/" className="py-2 font-serif text-lg md:text-2xl text-white font-bold">
             Bemac Global Services
           </Link>
         </div>
