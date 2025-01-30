@@ -50,7 +50,7 @@ const AboutPage = () => {
                 <img
                   src={`https://flagcdn.com/w40/${country.code}.png`}
                   alt={country.name}
-                  className="w-12 h-6"
+                  className="w-6 md:w-12 h-6 md:h-12 rounded-full border border-[#3E2723]"
                 />
                 <span className="border-b-2 border-gray-300 hover:border-[#3E2723]">{ country.name}</span>
               </li>

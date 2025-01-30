@@ -178,7 +178,7 @@ function Footer() {
           </div>
 
           {/* Right Side: Map and Address */}
-          <div className="flex flex-col items-center md:w-1/2 mt-8 md:mt-0">
+          <div className="flex flex-col items-center md:w-1/2 mt-8 pt-4 md:mt-0">
             <p className="text-sm md:text-base text-gray-200 text-center md:text-left font-semibold mb-4">
               <u>Bemac Global Service</u>, 2nd Floor, Abc Building, Block 2 XYZ CIty
             </p>
