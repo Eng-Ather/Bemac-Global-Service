@@ -24,8 +24,9 @@ const AboutPage = () => {
         <div className=" flex flex-col md:flex-row items-center justify-between gap-4">
 
           {/* Company Introduction */}
-          <div className=" w-full md:w-1/2 bg-white">
-            <h2 className="text-2xl md:text-4xl text-center text-[#3E2723] font-bold mb-4">About Our Company</h2>
+          <div className=" w-full md:w-1/2">
+            <h2 className="text-2xl md:text-4xl text-[#3E2723] font-bold mb-4">
+              About <span className="text-[#E94560]"> Bemac Global Services</span></h2>
             <p className=" text-lg leading-relaxed">
               Bemac Global Services Incorporated was founded in the Summer of 2022 in Toronto, Canada.
               Our strategic location enables us to offer world-class services across multiple regions.
@@ -42,11 +43,12 @@ const AboutPage = () => {
         </div>
 
         {/* Global Presence */}
-        <div className="p-4 my-8">
-          <h3 className="text-2xl md:text-4xl text-[#3E2723] font-bold mb-4 md:mb-8">Our Global Presence</h3>
+        <div className="w-full md:w-2/3 mx-auto p-4 my-8 md:my-16">
+          <h3 className="text-2xl md:text-4xl text-[#3E2723] text-center font-bold mb-4 md:mb-8">
+            Our <span className="text-[#E94560]"> Global Presence</span></h3>
           <ul className="grid grid-cols-2 md:grid-cols-3 gap-6 text-black text-lg">
             {countryFlags.map((country) => (
-              <li key={country.code} className=" flex items-center gap-4">
+              <li key={country.code} className="flex items-center gap-4">
                 <img
                   src={`https://flagcdn.com/w40/${country.code}.png`}
                   alt={country.name}
@@ -64,7 +66,8 @@ const AboutPage = () => {
 
         {/* Industry Focus */}
         <div className=" p-8">
-          <h3 className="text-2xl md:text-4xl text-[#3E2723] font-bold mb-4">Industry Focus</h3>
+          <h3 className="text-2xl md:text-4xl text-[#3E2723] text-center font-bold mb-4">
+            Industry <span className="text-[#E94560]"> Focus </span></h3>
          
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-disc pl-6 text-lg leading-relaxed space-y-5">
             <li className="border-b-2 border-gray-300 hover:border-[#3E2723] md:mx-auto flex items-center gap-2"><Activity /> Shipping Industry</li>
