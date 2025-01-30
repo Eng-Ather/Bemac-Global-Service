@@ -36,7 +36,7 @@ const AboutPage = () => {
             <img
               src="https://workdesign.com/wp-content/uploads/2014/10/IMG_2114-720x387.jpg"
               alt="About Bemac Global"
-              className="w-full h-72 object-cover"
+              className="w-full h-72 object-cover rounded-xl"
             />
           </div>
         </div>
