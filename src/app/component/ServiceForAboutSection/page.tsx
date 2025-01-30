@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const ServiceCard = ({ title, description, imgSrc }: { title: string, description: string, imgSrc: string }) => {
     return (
-        <div className="bg-gradient-to-br from-[#3E2723] to-[#3498DB] text-white shadow-lg rounded-xl overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl duration-300">
+        <div className="bg-gradient-to-br from-[#3498DB] to-[#3E2723]  text-white shadow-lg rounded-xl overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl duration-300">
             {/* <div className="relative">
                 <Image
                     src={imgSrc}

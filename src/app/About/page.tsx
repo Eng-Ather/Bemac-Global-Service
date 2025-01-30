@@ -25,7 +25,7 @@ const AboutPage = () => {
 
           {/* Company Introduction */}
           <div className=" w-full md:w-1/2 bg-white">
-            <h2 className="text-2xl md:text-4xl text-[#3E2723] font-bold mb-4">Company Profile</h2>
+            <h2 className="text-2xl md:text-4xl text-center text-[#3E2723] font-bold mb-4">About Our Company</h2>
             <p className=" text-lg leading-relaxed">
               Bemac Global Services Incorporated was founded in the Summer of 2022 in Toronto, Canada.
               Our strategic location enables us to offer world-class services across multiple regions.
