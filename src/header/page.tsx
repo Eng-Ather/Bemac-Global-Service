@@ -8,7 +8,7 @@ const Header = () => {
     <header className="w-full bg-[#3E2723] py-4 px-6 shadow-md">
       <div className="max-w-6xl  mx-auto flex justify-between items-center ">
         {/* Logo and Brand Name */}
-        <div className="w-1/4 border border-white flex items-center gap-4 space-x-3">
+        <div className="w-1/4  flex items-center gap-4 space-x-3">
           <Image
             className=" rounded-full border border-white shadow-lg"
             src={Logo1}
