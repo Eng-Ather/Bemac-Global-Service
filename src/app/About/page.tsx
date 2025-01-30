@@ -44,19 +44,19 @@ const AboutPage = () => {
         {/* Global Presence */}
         <div className="p-4 my-8">
           <h3 className="text-2xl md:text-4xl text-[#3E2723] font-bold mb-4 md:mb-8">Our Global Presence</h3>
-          <ul className="grid grid-cols-2 md:grid-cols-3 gap-6 text-gray-800 text-lg">
+          <ul className="grid grid-cols-2 md:grid-cols-3 gap-6 text-black text-lg">
             {countryFlags.map((country) => (
-              <li key={country.code} className="flex items-center gap-2">
+              <li key={country.code} className=" flex items-center gap-4">
                 <img
                   src={`https://flagcdn.com/w40/${country.code}.png`}
                   alt={country.name}
-                  className="w-6 h-4"
+                  className="w-12 h-6"
                 />
-                {country.name}
+                <span className="border-b-2 border-gray-300 hover:border-[#3E2723]">{ country.name}</span>
               </li>
             ))}
           </ul>
-        </div>;
+        </div>
 
         <div className="mb-8 ">
           <ServiceForAboutSection />
@@ -65,11 +65,12 @@ const AboutPage = () => {
         {/* Industry Focus */}
         <div className=" p-8">
           <h3 className="text-2xl md:text-4xl text-[#3E2723] font-bold mb-4">Industry Focus</h3>
-          <ul className="list-disc pl-6 text-lg leading-relaxed space-y-5">
-            <li className="flex items-center gap-2"><Briefcase /> Healthcare Industry (Nurses, Midwives, Pediatric Care)</li>
-            <li className="flex items-center gap-2"><Activity /> Shipping Industry</li>
-            <li className="flex items-center gap-2"><Anchor /> Fishing </li>
-            <li className="flex items-center gap-2"><Leaf /> Agriculture (Farm Workers)</li>
+         
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-disc pl-6 text-lg leading-relaxed space-y-5">
+            <li className="border-b-2 border-gray-300 hover:border-[#3E2723] md:mx-auto flex items-center gap-2"><Activity /> Shipping Industry</li>
+            <li className="border-b-2 border-gray-300 hover:border-[#3E2723] md:mx-auto flex items-center gap-2"><Anchor /> Fishing </li>
+            <li className="border-b-2 border-gray-300 hover:border-[#3E2723] md:mx-auto flex items-center gap-2"><Briefcase /> Healthcare Industry (Nurses, Midwives, Pediatric Care)</li>
+            <li className="border-b-2 border-gray-300 hover:border-[#3E2723] md:mx-auto flex items-center gap-2"><Leaf /> Agriculture (Farm Workers)</li>
           </ul>
         </div>
       </div>
