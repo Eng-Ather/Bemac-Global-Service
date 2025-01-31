@@ -1,22 +1,4 @@
 
-// const Services = () => {
-//     return (
-//       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 text-gray-900">
-//         <h1 className="text-4xl font-bold mb-4">Our Services</h1>
-//         <ul className="text-lg max-w-3xl list-disc list-inside">
-//           <li>Professional Recruitment</li>
-//           <li>Corporate Training Programs</li>
-//           <li>Higher Education Consultation</li>
-//           <li>Investment Advisory</li>
-//           <li>E-Commerce Solutions</li>
-//         </ul>
-//       </div>
-//     );
-//   };
-  
-//   export default Services;
-//   -------------------
-
 "use client";
 
 import React from "react";

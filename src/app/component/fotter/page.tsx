@@ -41,7 +41,7 @@ function Footer() {
                   About
                 </Link>
                 <Link
-                  href="/Notification"
+                  href="/Services"
                   className="text-white hover:text-gray-300 hover:underline decoration-2 underline-offset-4 transition duration-300"
                 >
                   Services

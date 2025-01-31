@@ -1,8 +1,7 @@
-
 "use client";
-
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import StarRating from "@/app/component/Rating";
 
 // Define types for the ProgressBar props
 interface ProgressBarProps {
@@ -17,7 +16,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ label, value }) => {
             <label className="block text-xl mb-2">{label}</label>
             <div className="w-full bg-gray-300 rounded-full h-2.5">
                 <div
-                    className="bg-red-900 h-2.5 rounded-full"
+                    className="bg-red-900 h-2.5 rounded-full animate-fade-in2"
                     style={{ width: `${value}%` }}
                 ></div>
             </div>
@@ -26,11 +25,10 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ label, value }) => {
 };
 
 const HeroSection = () => {
+
     return (
         <div>
-            {/* <div className=" h-1/2 md:h-screen relative"> */}
             <div className="h-96 md:h-screen relative">
-
                 {/* Background Image */}
                 <div className="absolute top-0 left-0 w-full h-full">
                     <Image
@@ -44,12 +42,18 @@ const HeroSection = () => {
                 </div>
 
                 {/* Text Content */}
-                <div className="absolute inset-0 flex items-start justify-center z-10">
+                {/* <div className="absolute inset-0 flex items-start justify-center z-10">
                     <h1 className="hidden md:block mt-14 text-4xl font-bold text-red-900 drop-shadow-lg">
                         Bemac Global Services
                     </h1>
-                </div>
+                </div> */}
 
+                {/* Text Content */}
+                <div className="w-1/2 absolute inset-y-0 right-0 flex items-start justify-end z-10">
+                    <h1 className="hidden sm:block mt-12 md:mt-24 text-3xl md:text-6xl font-bold text-white text-shadow animate-fade-in">
+                        Be A Part of Bemac Global Services
+                    </h1>
+                </div>
                 {/* States Section */}
                 <div className="absolute bottom-1 md:bottom-4 left-0 w-full z-20">
                     <div className="flex justify-around bg-black bg-opacity-50 md:bg-opacity-60 text-white py-2 md:py-6 rounded-lg shadow-lg mx-2 md:mx-16">
@@ -71,12 +75,11 @@ const HeroSection = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
 
             {/* Progress Bar Section */}
-            <div className=" py-5 flex flex-col md:flex-row items-center justify-center">
-                <div  className="w-full md:w-1/2 ">
+            <div className="py-5 flex flex-col md:flex-row items-center justify-center">
+                <div className="w-full md:w-1/2 mb-4 md:mb-0">
                     <h2 className="py-5 text-center font-bold text-2xl md:text-2xl lg:text-2xl mb-4 text-red-900">
                         Service Performance (2024)
                     </h2>
@@ -89,7 +92,7 @@ const HeroSection = () => {
                 </div>
 
                 {/* Progress Bars */}
-                <div className="  w-full md:w-1/2 mx-auto px-4 md:px-16 py-5">
+                <div className="w-full md:w-1/2 mx-auto px-4 md:px-16 py-5">
                     <ProgressBar label="Recruitment" value={75} />
                     <ProgressBar label="Training" value={85} />
                     <ProgressBar label="Education" value={90} />
@@ -97,9 +100,14 @@ const HeroSection = () => {
                     <ProgressBar label="E-Commerce" value={70} />
                 </div>
             </div>
+
+            {/* Rating Section */}
+            <h2 className="py-5 px-8 font-bold text-2xl mb-4 text-red-900">
+                Rating and Reviews
+            </h2>
+            <StarRating />
         </div>
     );
 };
 
 export default HeroSection;
-

@@ -131,6 +131,10 @@ body {
   }
 }
 
+.text-shadow {
+    text-shadow: 6px 5px 4px rgba(127, 29, 29, 0.918); /* Adjust values as needed */
+}
+
 @layer base {
   * {
     @apply border-border;
