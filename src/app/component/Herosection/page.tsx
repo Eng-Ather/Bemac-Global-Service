@@ -80,8 +80,8 @@ const HeroSection = () => {
             {/* Progress Bar Section */}
             <div className="py-5 flex flex-col md:flex-row items-center justify-center">
                 <div className="w-full md:w-1/2 mb-4 md:mb-0">
-                    <h2 className="py-5 text-center font-bold text-2xl md:text-2xl lg:text-2xl mb-4 text-red-900">
-                        Service Performance (2024)
+                    <h2 className="py-5 px-8 font-bold text-2xl md:text-4xl mb-4 text-red-900">
+                        Service Performance (last year)
                     </h2>
                     <p className="text-center w-3/4 mx-auto">
                         A graphical representation of the services provided by the company in 2024.
@@ -102,7 +102,7 @@ const HeroSection = () => {
             </div>
 
             {/* Rating Section */}
-            <h2 className="py-5 px-8 font-bold text-2xl mb-4 text-red-900">
+            <h2 className="py-5 px-8 font-bold text-2xl md:text-4xl mb-4 text-red-900">
                 Rating and Reviews
             </h2>
             <StarRating />

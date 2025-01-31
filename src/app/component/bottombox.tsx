@@ -97,7 +97,7 @@ const SuccessStories: React.FC = () => {
 
   return (
     <div className=" p-8">
-      <h2 className="font-bold  text-red-900 text-2xl md:text-2xl lg:text-2xl mb-4">
+      <h2 className="font-bold  text-red-900 text-2xl md:text-4xl mb-4">
         Success Stories
       </h2>
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
