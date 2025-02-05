@@ -26,7 +26,7 @@ const Header = () => {
 
         {/* Navigation Links */}
         <nav className="md:text-lg">
-          <ul className=" flex space-x-6">
+          <ul className=" flex space-x-6 px-3">
             <li>
               <Link
                 href="/"
