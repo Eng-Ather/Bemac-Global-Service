@@ -2,19 +2,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo1 from "@/lib/images/logo1.jpg";
+import BEMACLOGO from "@/lib/images/BEMACLOGO.jpg"
 
 const Header = () => {
   return (
     <header className="w-full bg-[#3E2723] py-4 px-6 shadow-md">
       <div className="max-w-6xl  mx-auto flex justify-between items-center ">
         {/* Logo and Brand Name */}
-        <div className="w-1/4  flex items-center gap-4 space-x-3">
+        <div className="w-1/4 flex items-center gap-4 space-x-3 m-5">
           <Image
             className=" rounded-full border border-white shadow-lg"
-            src={Logo1}
+            // src={Logo1}
+            src={BEMACLOGO}
             alt="Bemac Global Logo"
-            width={60}
-            height={60}
+            width={80}
+            height={80}
           />
           <Link
             href="/"

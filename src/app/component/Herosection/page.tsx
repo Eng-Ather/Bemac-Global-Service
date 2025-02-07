@@ -30,7 +30,7 @@ const HeroSection = () => {
         <div>
             <div className="h-96 md:h-screen relative">
                 {/* Background Image */}
-                <div className="absolute top-0 left-0 w-full h-full">
+                <div className="absolute top-0 left-0 w-full h-full ">
                     <Image
                         className="object-cover"
                         src="https://economics.illinois.edu/sites/default/files/inline-images/consultant_orig.jpg"

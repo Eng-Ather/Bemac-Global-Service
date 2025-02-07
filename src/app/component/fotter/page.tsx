@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaFacebook, FaYoutube, FaLinkedin, FaPhone, FaEnvelope  } from "react-icons/fa";
 import copyright from "@/app/lib/copyright.png";
 import Logo1 from "@/lib/images/logo1.jpg";
+import BEMACLOGO from "@/lib/images/BEMACLOGO.jpg"
 
 function Footer() {
   return (
@@ -17,7 +18,8 @@ function Footer() {
             {/* Logo */}
             <div className="hidden md:block md:w-1/3 rounded-xl">
               <Image
-                src={Logo1}
+                // src={Logo1}
+                src={BEMACLOGO}
                 width={100}
                 height={100}
                 alt="company Logo"
