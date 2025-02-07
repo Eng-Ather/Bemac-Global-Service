@@ -16,14 +16,14 @@ function Footer() {
           {/* Left Side: Logo and Links */}
           <div className="flex flex-col md:flex-row items-center md:w-1/2 space-y-6 md:space-y-0">
             {/* Logo */}
-            <div className="hidden md:block md:w-1/3 rounded-xl">
+            <div className="hidden md:block md:w-1/3 ">
               <Image
                 // src={Logo1}
                 src={BEMACLOGO}
-                width={100}
-                height={100}
+                // width={100}
+                // height={100}
                 alt="company Logo"
-                className="p-4 w-full max-h-40 rounded-3xl "
+                className="p-4 w-full max-h-96  "
               />
             </div>
 
@@ -95,7 +95,7 @@ function Footer() {
             </p>
 
             <iframe
-              className="w-full pb-2 md:w-2/3 h-48 rounded-lg shadow-lg"
+              className="w-full pb-2 md:w-2/3 h-48 shadow-lg"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2609.9438027226124!2d-121.9979614!3d49.1446914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548438ab69540a2f%3A0x18117e01a7fcf76!2s44322%20Yale%20Rd%20%23292%2C%20Chilliwack%2C%20BC%20V2R%204H1%2C%20Canada!5e0!3m2!1sen!2s!4v1738108751578!5m2!1sen!2s"
               loading="lazy"
             >

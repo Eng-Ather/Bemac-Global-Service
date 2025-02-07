@@ -11,16 +11,16 @@ const Header = () => {
         {/* Logo and Brand Name */}
         <div className="w-1/4 flex items-center gap-4 space-x-3 m-5">
           <Image
-            className=" rounded-full border border-white shadow-lg"
+            className=" rounded-full shadow-lg"
             // src={Logo1}
             src={BEMACLOGO}
             alt="Bemac Global Logo"
-            width={80}
-            height={80}
+            width={120}
+            height={120}
           />
           <Link
             href="/"
-            className="hidden md:block font-serif text-lg md:text-2xl text-white font-bold"
+            className="hidden md:block font-serif text-lg md:text-3xl text-white font-bold"
           >
             Bemac Global Services
           </Link>
